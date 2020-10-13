@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Sample</title>   
+    <style>
+        /* button{
+            width: 300px;
+            background-color: black;
+            color:white;
+        } */
+        /* input{
+            width: 300px;
+            display: flex;            
+        } */
+    </style>   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+</head>
+<body>
+
+    <div class="jumbotron text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p> 
+      </div>
+
+    <input type="number" id="x" value="13" placeholder="x">    
+    <br />
+    <input type="number" id="y" value="23">
+    <br/>
+    <input type="text" class="input-control" id="result" placeholder="result">
+    <button class="btn btn-lg btn-primary" onclick="myfun()">Greater</button>
+
+    <script>
+        function myfun(){
+            // alert('done');
+            // var x = document.getElementById("x").value;
+            var x = $("#x").val();
+            // var y = document.getElementById("y").value;
+            var y = $("#y").val();
+
+            if ( x > y){
+                document.getElementById("result").value = x
+            }else{
+                document.getElementById("result").value = y;
+            }
+            // document.write(x+y);
+        }
+        // var x = prompt("x=");
+        // var y = prompt("what is y:");
+        // x = parseInt(x);
+        // y = parseInt(y);
+        // alert(x+y);
+    </script>
+</body>
+</html>
